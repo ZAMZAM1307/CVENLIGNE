@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOUVEAU SITE</title>
+  <link rel="stylesheet" href="indexreproduction.css">
+</head>
+
+<body>
+  <nav class="main-nav">
+    <div class="brand">BOOK VILLAGE</div>
+    <ul class="nav-menu">
+      <li>LIVRE</li>
+      <li class="search-item">
+        <span>RECHERCHE</span>
+        <div class="search-dropdown">
+          <input type="text" placeholder="Rechercher un livre..." aria-label="Rechercher">
+        </div>
+      </li>
+      <li class="auth-group">
+        <span class="auth-link">SE CONNECTER</span>
+        <span class="auth-separator">|</span>
+        <span class="auth-link">S'INSCRIRE</span>
+      </li>
+      <li><button class="sell-button" type="button">VENDS TES LIVRES</button></li>
+      <li>AIDE</li>
+    </ul>
+  </nav>
+
+  <div class="category-accordion">
+    <div class="tab-item">
+      <button class="tab-trigger">Série de Livre</button>
+      <div class="accordion-content">
+        <ul class="submenu-list">
+          <li><a href="#">Romans policiers</a></li>
+          <li><a href="#">Fantastique</a></li>
+          <li><a href="#">Aventure</a></li>
+          <li><a href="#">Best-sellers</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab-item">
+      <button class="tab-trigger">Roman et Littérature</button>
+      <div class="accordion-content">
+        <ul class="submenu-list">
+          <li><a href="#">Classiques</a></li>
+          <li><a href="#">Contemporain</a></li>
+          <li><a href="#">Essais</a></li>
+          <li><a href="#">Poésie</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab-item">
+      <button class="tab-trigger">BD et manga</button>
+      <div class="accordion-content">
+        <ul class="submenu-list">
+          <li><a href="#">Manga</a></li>
+          <li><a href="#">Comics</a></li>
+          <li><a href="#">Albums</a></li>
+          <li><a href="#">Jeunesse</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab-item">
+      <button class="tab-trigger">Livre jeunesse</button>
+      <div class="accordion-content">
+        <ul class="submenu-list">
+          <li><a href="#">0-3 ans</a></li>
+          <li><a href="#">4-7 ans</a></li>
+          <li><a href="#">8-12 ans</a></li>
+          <li><a href="#">Albums illustrés</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab-item">
+      <button class="tab-trigger">Scolaire et parascolaire</button>
+      <div class="accordion-content">
+        <ul class="submenu-list">
+          <li><a href="#">Manuels</a></li>
+          <li><a href="#">Cahiers</a></li>
+          <li><a href="#">Aides scolaires</a></li>
+          <li><a href="#">Pédagogie</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab-item">
+      <button class="tab-trigger">Science et technique</button>
+      <div class="accordion-content">
+        <ul class="submenu-list">
+          <li><a href="#">Informatique</a></li>
+          <li><a href="#">Physique</a></li>
+          <li><a href="#">Mathématiques</a></li>
+          <li><a href="#">Technologie</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab-item">
+      <button class="tab-trigger">Culture et religion</button>
+      <div class="accordion-content">
+        <ul class="submenu-list">
+          <li><a href="#">Histoire</a></li>
+          <li><a href="#">Philosophie</a></li>
+          <li><a href="#">Spiritualité</a></li>
+          <li><a href="#">Traditions</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tab-item">
+      <button class="tab-trigger">Arts et Pratiques</button>
+      <div class="accordion-content">
+        <ul class="submenu-list">
+          <li><a href="#">Art</a></li>
+          <li><a href="#">Cuisine</a></li>
+          <li><a href="#">Loisirs créatifs</a></li>
+          <li><a href="#">DIY</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-image-wrap">
+    <img class="hero-image"
+      src="./Nouveau dossier/livre-ouvert-sur-une-pile-de-livres-panorama-lisant-l-éducation-allumée-127889909.webp"
+      alt="livre ouvert">
+    <button class="filter-tab" type="button" aria-expanded="false">Filtrer</button>
+  </div>
+
+  <div class="filter-overlay" id="filterOverlay" aria-hidden="true"></div>
+
+  <aside class="filter-panel" id="filterPanel" aria-hidden="true">
+    <div class="filter-panel-header">
+      <h2>Filtrer</h2>
+      <button class="close-filter" type="button" aria-label="Fermer le filtre">×</button>
+    </div>
+
+    <div class="filter-group">
+      <p class="filter-label">Prix</p>
+      <label class="filter-option"><input type="radio" name="price" checked> Tous les prix</label>
+      <label class="filter-option"><input type="radio" name="price"> Moins de 10 €</label>
+      <label class="filter-option"><input type="radio" name="price"> 10 € à 20 €</label>
+      <label class="filter-option"><input type="radio" name="price"> Plus de 20 €</label>
+    </div>
+
+    <div class="filter-group">
+      <p class="filter-label">Date de publication</p>
+      <select class="filter-select" aria-label="Date de publication">
+        <option>Toutes les dates</option>
+        <option>Avant 2000</option>
+        <option>2000 - 2009</option>
+        <option>2010 - 2019</option>
+        <option>2020 et plus</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <p class="filter-label">Auteur</p>
+      <select class="filter-select" aria-label="Auteur">
+        <option>Tous les auteurs</option>
+        <option>J.K. Rowling</option>
+        <option>George Orwell</option>
+        <option>Marguerite Yourcenar</option>
+        <option>Albert Camus</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <p class="filter-label">Titre</p>
+      <input class="filter-input" type="text" placeholder="Rechercher un titre" aria-label="Titre du livre">
+    </div>
+
+    <div class="filter-group">
+      <p class="filter-label">État d’usure</p>
+      <div class="filter-checkbox-list">
+        <label class="filter-option"><input type="checkbox" checked> Très bon</label>
+        <label class="filter-option"><input type="checkbox"> Bon</label>
+        <label class="filter-option"><input type="checkbox"> Moyen</label>
+        <label class="filter-option"><input type="checkbox"> Usé</label>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <p class="filter-label">Format</p>
+      <div class="filter-checkbox-list">
+        <label class="filter-option"><input type="checkbox" checked> Broché</label>
+        <label class="filter-option"><input type="checkbox"> Relié</label>
+        <label class="filter-option"><input type="checkbox"> Poche</label>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <p class="filter-label">Ordre</p>
+      <label class="filter-option"><input type="radio" name="sort" checked> Par défaut</label>
+      <label class="filter-option"><input type="radio" name="sort"> Prix croissant</label>
+      <label class="filter-option"><input type="radio" name="sort"> Prix décroissant</label>
+    </div>
+
+    <div class="filter-actions">
+      <button class="secondary-button" type="button">Réinitialiser</button>
+      <button class="primary-button" type="button">Appliquer</button>
+    </div>
+  </aside>
+
+  <section class="card-row" aria-label="Catégories de livres">
+    <article class="mini-card">
+      <img class="card-image" src="./Nouveau dossier/1a0a4e9f-4432-42fd-b64a-c7f3bbe6f767-v1.webp" alt="Romans">
+      <div class="card-content">
+        <h3>Les ombres du monde</h3>
+        <p class="card-price">12,90 €</p>
+      </div>
+    </article>
+    <article class="mini-card">
+      <img class="card-image" src="./Nouveau dossier/858fd76a-8b34-49b6-8e5e-27b3143b3c84-v1.webp" alt="Essais">
+      <div class="card-content">
+        <h3>Le bal des foudroyés</h3>
+        <p class="card-price">15,50 €</p>
+      </div>
+    </article>
+    <article class="mini-card">
+      <img class="card-image" src="./Nouveau dossier/ff331ebd-7cbc-415f-be79-cfdd79786aa8-v1.webp" alt="BD">
+      <div class="card-content">
+        <h3>BLa fin des menteurs</h3>
+        <p class="card-price">18,00 €</p>
+      </div>
+    </article>
+    <article class="mini-card">
+      <img class="card-image" src="./Nouveau dossier/c1cc3e3b-46b4-4eea-a556-3df3ddca4641-v1.webp" alt="Jeunesse">
+      <div class="card-content">
+        <h3>La bateille pour le climat est une lutte des classes</h3>
+        <p class="card-price">22,90 €</p>
+      </div>
+    </article>
+    <article class="mini-card">
+      <img class="card-image" src="./Nouveau dossier/ef15906e-b7f9-41b3-8f0a-ae2fae72639c-v1.webp" alt="Sciences">
+      <div class="card-content">
+        <h3>Les filles du 9 juin</h3>
+        <p class="card-price">14,20 €</p>
+      </div>
+    </article>
+    <article class="mini-card">
+      <img class="card-image" src="./Nouveau dossier/ff331ebd-7cbc-415f-be79-cfdd79786aa8-v1.webp" alt="Arts">
+      <div class="card-content">
+        <h3>Nous les menteurs</h3>
+        <p class="card-price">16,80 €</p>
+      </div>
+    </article>
+  </section>
+
+  <div class="auteur-group" aria-label="Auteurs">
+    <article class="auteur">
+      <img class="image-auteur" src="./Nouveau dossier/Eiichiro Oda.jpg" alt="Eiichiro Oda">
+      <div class="auteur-content">
+        <h3>Eiichiro Oda</h3>
+      </div>
+    </article>
+    <article class="auteur">
+      <img class="image-auteur" src="./Nouveau dossier/Mr-Tan.png" alt="Mr TANG">
+      <div class="auteur-content">
+        <h3>Mr TANG</h3>
+      </div>
+    </article>
+    <article class="auteur">
+      <img class="image-auteur" src="./Nouveau dossier/Lucinda Riley.jpg" alt="Lucinda Riley">
+      <div class="auteur-content">
+        <h3>Lucinda Riley</h3>
+      </div>
+    </article>
+    <article class="auteur">
+      <img class="image-auteur" src="./Nouveau dossier/Franck Thilliez.jpg" alt="Franck Thilliez">
+      <div class="auteur-content">
+        <h3>Franck Thilliez</h3>
+      </div>
+    </article>
+    <article class="auteur">
+      <img class="image-auteur" src="./Nouveau dossier/Freida-McFadden.png" alt="Freida McFadden">
+      <div class="auteur-content">
+        <h3>Freida McFadden</h3>
+      </div>
+    </article>
+    <article class="auteur">
+      <img class="image-auteur" src="./Nouveau dossier/Harlan Coben.jpg" alt="Harlan Coben">
+      <div class="auteur-content">
+        <h3>Harlan Coben</h3>
+      </div>
+    </article>
+  </div>
+
+  <section class="card-row card-row--bottom" aria-label="Autres livres">
+    <article class="mini-card">
+      <img class="card-image" src="./Nouveau dossier/la guerre par d'autres moyens.webp" alt="Arts">
+      <div class="card-content">
+        <h3>La guerre par d'autres moyens</h3>
+        <p class="card-price">19,90 €</p>
+      </div>
+    </article>
+    <article class="mini-card">
+      <img class="card-image" src="./Nouveau dossier/la villa des hassen.webp" alt="Arts">
+      <div class="card-content">
+        <h3>La villa des Hanssen</h3>
+        <p class="card-price">21,40 €</p>
+      </div>
+    </article>
+    <article class="mini-card">
+      <img class="card-image" src="./Nouveau dossier/rendez vous l'été prochain.webp" alt="Arts">
+      <div class="card-content">
+        <h3>Rendez vous l'été prochain</h3>
+        <p class="card-price">17,60 €</p>
+      </div>
+    </article>
+    <article class="mini-card">
+      <img class="card-image" src="./Nouveau dossier/mes histoires d'hier et d'aujourd'hui.webp" alt="Arts">
+      <div class="card-content">
+        <h3>Mes histoires d'hier et d'aujourd'hui</h3>
+        <p class="card-price">13,70 €</p>
+      </div>
+    </article>
+    <article class="mini-card">
+      <img class="card-image" src="./Nouveau dossier/bordeterre.webp" alt="Arts">
+      <div class="card-content">
+        <h3>Bordeterre VOL. 1</h3>
+        <p class="card-price">11,30 €</p>
+      </div>
+    </article>
+    <article class="mini-card">
+      <img class="card-image" src="./Nouveau dossier/les écureils de central park sont tristes le lundi.webp"
+        alt="Arts">
+      <div class="card-content">
+        <h3>Les écureils de central park sont</h3>
+        <p class="card-price">11,30 €</p>
+      </div>
+    </article>
+  </section>
+  <script>
+    const filterButton = document.querySelector('.filter-tab');
+    const filterPanel = document.getElementById('filterPanel');
+    const filterOverlay = document.getElementById('filterOverlay');
+    const closeFilter = document.querySelector('.close-filter');
+
+    const closeFilterPanel = () => {
+      filterPanel.classList.remove('open');
+      filterOverlay.classList.remove('open');
+      filterButton.setAttribute('aria-expanded', 'false');
+      filterPanel.setAttribute('aria-hidden', 'true');
+      filterOverlay.setAttribute('aria-hidden', 'true');
+    };
+
+    filterButton.addEventListener('click', () => {
+      const isOpen = !filterPanel.classList.contains('open');
+      filterPanel.classList.toggle('open', isOpen);
+      filterOverlay.classList.toggle('open', isOpen);
+      filterButton.setAttribute('aria-expanded', String(isOpen));
+      filterPanel.setAttribute('aria-hidden', String(!isOpen));
+      filterOverlay.setAttribute('aria-hidden', String(!isOpen));
+    });
+
+    closeFilter.addEventListener('click', closeFilterPanel);
+    filterOverlay.addEventListener('click', closeFilterPanel);
+
+    document.addEventListener('click', (event) => {
+      if (!filterPanel.contains(event.target) && !filterButton.contains(event.target) && !filterOverlay.contains(event.target)) {
+        closeFilterPanel();
+      }
+    });
+  </script>
+</body>
+
+</html>
